@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(wallpaperflare.com_wallpaper\(56\).jpg);
+        }
+        .main{
+            background-color: whitesmoke;
+            width: 25%;
+            margin: .5rem auto;
+            border-radius: 5px;  
+        }
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            margin: 1rem auto;
+            margin-top: .2rem;
+        }
+        .submit input{
+            width: 11rem;
+            font-size: 20px;
+            margin: 1rem auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <h1>Registration Form</h1>
+        <div class="form">
+            <form action="post">
+                <div class="input">
+                    <div >
+                        <label for="username">Username</label>
+                        <br>
+                        <input type="text" name="username" id="username" placeholder="luck volta" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <br>
+                        <input type="password"name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" id=" email" required>
+                    </div>
+                    
+                    <div class="buttons">
+                        <label for="checkbox" >Prefrences:</label>
+                        <div style="margin-top: 1rem;">
+                            <input type="checkbox" name="checkbox" id="" value="recieve newsletter">
+                            <label for="checkbox">Recieve newsletter</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="checkbox" id="" value="product update">
+                            <label for="checkbox">Product update</label>
+                        </div>
+                        <label for="gender">Gender:</label>
+                        <div style="margin-top: 1rem;">
+                            <input type="radio" name="gender" id="" required>
+                            <label for="gender">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="" >
+                            <label for="gender">Female</label>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <label for="country">Country:</label> 
+                        <select id="country" name="country"> 
+                           <option value="Country" disabled selected>Select Country</option> 
+                           <option value="Egypt">Egypt</option> 
+                           <option value="US">US</option> 
+                           <option value="UK">UK</option> 
+                        </select>
+                    </div>
+                    <div class="textarea" >
+                        <label for="textarea">Bio:</label>
+                    <br>
+                    <textarea name="textarea" id="textarea" placeholder="Enter a paragraph about your self"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Register">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--
+    username
+    password
+    email
+    prefrences: (check box)
+        recieve newsletter
+        product update
+    gender:(radio)
+        male 
+        female
+    country :(select)
+        us 
+        eg
+        uk
+    Bio: (textarea)
+    submit button
+-->

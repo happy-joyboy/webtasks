@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onload Event Example</title>
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body onload="pageLoaded()">
+    <h2>onload Event Example</h2> 
+    <p id="out1"></p>
+    <img src="pictures/yard.jpg" alt="Yard" onload="imageLoaded()">
+    <p id="out2"></p>
+    <script>
+        function pageLoaded() {
+            document.getElementById("out1").innerText = "The page has been loaded successfully!";
+        }
+        function imageLoaded() {
+            document.getElementById("out2").innerText = "The image has been loaded successfully!";
+        }
+    </script>
+</body>
+</html>

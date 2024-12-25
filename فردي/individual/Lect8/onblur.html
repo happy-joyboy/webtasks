@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>onblur Event Example</title>
+    <style>
+        input {
+            width: 200px;
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>onblur Example</h2>
+    <input type="text" id="in" placeholder="Type something and click away" onblur="blurFunction()">
+    <script>
+        function blurFunction() {
+            document.getElementById("in").style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>

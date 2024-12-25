@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(216, 232, 149);
+}
+
+h1{
+    background-color: black;
+    color: azure;
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+}
+h2{
+    background-color: rgb(242, 7, 7);
+    color: rgb(4, 229, 229);
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+}
+h3{
+    background-color: rgb(167, 4, 110);
+    color: rgb(22, 154, 77);
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+}
+h4{
+    background-color: rgb(222, 246, 13);
+    color: rgb(90, 11, 210);
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+}
+h5{
+    background-color: rgb(235, 159, 8);
+    color: rgb(15, 31, 250);
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+}
+h6{
+    background-color: rgb(6, 251, 153);
+    color: rgb(240, 3, 149);
+    border: solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+}
+pre{
+    background-color: black;
+    color: blanchedalmond;
+    font-size: large;
+}

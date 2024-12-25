@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .signin-container {
+            background-color: #ffffff;
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .signin-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .signin-container p {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .signin-container label {
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            display: block;
+            text-align: left;
+        }
+
+        .signin-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .signin-container input:focus {
+            border-color: #ff7e5f;
+            outline: none;
+            box-shadow: 0 0 4px rgba(255, 126, 95, 0.5);
+        }
+
+        .signin-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff7e5f;
+            color: #ffffff;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signin-container button:hover {
+            background-color: #e66851;
+        }
+
+        .signin-container small {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        .signin-container a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+
+        .signin-container a:hover {
+            text-decoration: underline;
+        }
+
+        .remember-me {
+            display: flex;
+            
+            
+            font-size: 1em;
+            color: #555;
+        }
+
+        .remember-me input {
+            left: 0px;
+            width: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h1>Sign In</h1>
+        <p>Access your account</p>
+        <form action="#" method="POST">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label>
+                    Remember Me
+                </label>
+                
+                <a href="#" style="margin-left: 142px;">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Sign In</button>
+        </form>
+        <small>Don't have an account? <a href="#">Sign up here</a>.</small>
+    </div>
+</body>
+</html>

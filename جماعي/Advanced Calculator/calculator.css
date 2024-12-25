@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #0083e9;
+}
+
+h1 {
+  width: 615px;
+  margin: 20px auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 30px;  
+  border: 2px solid red;
+}
+
+.calculator {
+  margin-top: 40px;
+  position: absolute;
+  background-color: #ffffff;
+  width: 400px;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  font-size: 40px;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 18px;
+  
+  border-radius: 10px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #0083e9;
+  color: #ffffff;
+}
+
+.hidden{
+  border: none;
+}
+.hidden:hover{
+  background-color: white;
+
+}
+
+#clear {
+  grid-column: 2/4;
+  background-color: #ff6666;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#equal {
+  grid-column: 2/4;
+  background-color: #0083e9;
+  height: 40px;
+  color: #ffffff;
+}
+
+#erase {
+  background-color: #ffa366;
+  color: white;
+}
+
+.num {
+  background-color: #f7f7f7;
+}
+
+#percent {
+  background-color: #6673ff;
+  color: white;
+}
+.op{
+  background-color: #ffe066;
+}
+
+#sin,
+#cos,
+#tan,
+#log,
+#pow,
+#mod,
+#abs {
+  background-color: #ff66ed;
+}
+
+#pi, #e {
+  color: black;
+  background-color: rgb(21, 223, 199);
+}

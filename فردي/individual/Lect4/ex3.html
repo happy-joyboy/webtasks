@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .border-box {
+            width: 60%;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 10px solid transparent; /* Fallback border for browsers without support */
+            border-image-source: url('wp2568544.jpg'); /* Replace with your image */
+            border-image-slice: 30; /* Controls how the border image is divided */
+            border-image-repeat: round; /* Ensures the pattern repeats evenly */
+            border-image-width: 10px; /* Sets the width of the border */
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #0077cc;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #0077cc;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #0077cc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">
+        <h1>Stylish Border Image</h1>
+        <p>
+            This is an example of using a border image to create a visually appealing design. 
+            The border image repeats around the box for a unique effect.
+        </p>
+        <a href="#">Learn More</a>
+    </div>
+</body>
+</html>

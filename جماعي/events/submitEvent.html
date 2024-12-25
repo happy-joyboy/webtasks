@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <style>
+        .center{
+            margin: 30vh auto;
+
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            height: 100px;
+            margin: auto;
+            border: 5px solid red;
+            border-radius: 20px;
+        }
+        button{
+            height: 50px;
+            border: 2px solid rgb(20, 110, 220);
+            background-color: rgb(20, 110, 220);
+            border-radius: 20px;
+        }
+        input{
+            margin-right: 20px;
+            background-color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <form action="#"  onsubmit="myfun()">
+            <div><input type="text" name="name" id="name" placeholder="Name" required ></div>
+            <div ><button type="submit" value="SUBMIT">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function myfun(){
+            const name = document.getElementById("name").value;
+            alert('congrats '+name +' you Submited successfully!')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            width: 800px;
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-section p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-group a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-btns .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .btn-facebook {
+            background-color: #3b5998;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-twitter {
+            background-color: #1da1f2;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-google {
+            background-color: #db4437;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-facebook:hover {
+            background-color: #2d4373;
+        }
+
+        .btn-twitter:hover {
+            background-color: #0d95e8;
+        }
+
+        .btn-google:hover {
+            background-color: #c0392b;
+        }
+
+        .image-section {
+            flex: 1;
+            background: url(Gang.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .or {
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Sign In</h2>
+            <p>Please enter your login details.</p>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <div style="display: flex;">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="or">-or-</div>
+            <button class="btn">Log In</button>
+            <div class="social-btns">
+                <button class="btn btn-facebook">Login with Facebook</button>
+                <button class="btn btn-twitter">Login with Twitter</button>
+                <button class="btn btn-google">Login with Google</button>
+            </div>
+        </div>
+        <div class="image-section"></div>
+    </div>
+</body>
+
+</html>

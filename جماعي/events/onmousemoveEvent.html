@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onMouseOver</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: burlywood;
+        }
+        .div {
+            width:300px;
+            height:200px;
+            border: 2px dashed black;
+            margin: auto;
+            margin-top: 20vh;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+
+    <p>Mouse over the rectangle and get the coordinates of your mouse</p>
+    
+    <div id="test"></div>
+    
+    <script>
+    function myFunction(e) {
+      let x = e.clientX;
+      let y = e.clientY;
+      let coor = "Coordinates: (" + x + "," + y + ")";
+      document.getElementById("test").innerHTML = coor;
+    }
+    </script>    
+</body>
+</html>

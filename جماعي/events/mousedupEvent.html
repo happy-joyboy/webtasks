@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseupEvent</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:mediumseagreen;
+        }
+        #button {
+            width: 350px;
+            height: 350px;
+            background-color: rgb(255, 247, 247);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: width 0.4s, height 1s;
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #button:hover{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    
+    <button id="button">Click me!</button>
+
+    <script>
+        document.getElementById("button").addEventListener("mouseup", function () {
+            document.getElementById("button").innerText = "Hello!";
+        })
+    </script>
+</body>
+
+</html>

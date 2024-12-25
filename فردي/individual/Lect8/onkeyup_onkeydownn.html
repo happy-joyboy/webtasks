@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>onkeydown and onkeyup Example</title>
+    <style>
+        #output {
+            width: 400px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightyellow;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Try pressing and releasing a key</h2>
+    <input type="text" placeholder="Type something here" onkeydown="keyDownFunction(event)"
+        onkeyup="keyUpFunction(event)">
+    <div id="output">
+        <p><b>Key Down Event:</b> <span id="keydownText">None</span></p>
+        <p><b>Key Up Event:</b> <span id="keyupText">None</span></p>
+    </div>
+    <script>
+        let out1 = document.getElementById("keydownText");
+        let out2 = document.getElementById("keyupText");
+        function keyDownFunction(event) {
+            let key = event.key;
+            out1.innerText = "Key pressed down: " + key;
+            out1.style.backgroundColor = "yellow";
+            out2.style.backgroundColor = "lightyellow";
+        }
+        function keyUpFunction(event) {
+            var key = event.key;
+            out2.innerText = "Key released: " + key;
+            out2.style.backgroundColor = "yellow";
+            out1.style.backgroundColor = "lightyellow";
+        }
+    </script>
+</body>
+
+</html>

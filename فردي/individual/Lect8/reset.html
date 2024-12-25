@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset event</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: dodgerblue;
+
+        }
+        div{
+            width: 300px;
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        input,button{
+            width: 100%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <h1>reset event</h1>
+        <form id="form">
+            <label for="username">username</label>
+            <input id="username" type="text">
+            <label for="email">email</label>
+            <input id="email" type="email">
+            <label for="password">password</label>
+            <input id="password" type="password">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            <p id="out"></p>
+        </form>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener('reset',resetEvent);
+        function resetEvent(){
+            document.getElementById("out").innerHTML="form is reset";
+        }
+    </script>
+</body>
+</html>

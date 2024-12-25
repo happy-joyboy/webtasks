@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container h1 {
+            font-size: 1.8em;
+            color: #333333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-container label {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: #555555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea,
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-container input:focus,
+        .form-container select:focus,
+        .form-container textarea:focus {
+            border-color: #0077cc;
+            outline: none;
+            box-shadow: 0 0 4px rgba(0, 119, 204, 0.3);
+        }
+
+        .form-container button {
+            background-color: #0077cc;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #005fa3;
+        }
+
+        .form-container small {
+            display: block;
+            color: #888888;
+            font-size: 0.8em;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="">-- Select a Subject --</option>
+                <option value="inquiry">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+            <small>Fields marked with * are required</small>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

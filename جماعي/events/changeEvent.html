@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeEvent</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: mediumseagreen;
+
+        }
+
+        input {
+            width: 250px;
+            height: 50px;
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+            border-radius: 15px;
+            transition: width 0.6s, height 0.7s;
+        }
+
+        input:hover {
+            width: 500px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="name" id="name" placeholder=" Search ...">
+    </form>
+    <script>
+        document.getElementById("name").addEventListener("change", function () {
+            document.getElementById("name").style.color = "mediumseagreen";
+        })
+    </script>
+</body>
+
+</html>

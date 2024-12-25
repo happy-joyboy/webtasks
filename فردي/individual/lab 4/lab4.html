@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS model</title>
+    <style>
+        .test1{
+            width: 350px;
+            border: 1px solid black;
+        }
+        .span1{
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: greenyellow;
+        }
+        header,footer{
+            background-color: pink;
+            text-align: center;
+        }
+        main{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .main1,.main2,.main3{
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+        .main1{
+            background-color: orange;
+            width: 20%;
+
+        }
+        .main2{
+            background-color: yellow;
+            width: 60%;
+        }
+        .main3{
+            background-color: yellowgreen;
+            width: 20%;
+        }
+        .grid{
+            display: grid;
+            width: 400px;
+            border: 2px solid black;
+            padding: 12px;
+            background-color: orange;
+            grid-template-columns: minmax(auto,80%) 1fr 1fr;
+        }
+        .gridItem{
+            display: flex;
+            border: 1px solid black;
+            background-color: greenyellow;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .container{
+            background-color: greenyellow;
+            display: flex;
+            justify-content:left;
+            padding: 0;
+        }   
+        li{
+
+            list-style: none;
+            border: 1px solid black;
+            background-color: skyblue;
+            margin: 8px;
+            padding: 12px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="test1">The box model works differently for inline <br> elements. For example, this <br> <span class="span1">span</span> elements does not work as expected.</p>
+    </div>
+    <br>
+    <div>
+        <header>HEADER</header>
+        <main>
+            <main class="main1">
+                COLUMN 1
+            </main>
+            <main class="main2">
+                COLUMN 2
+            </main>
+            <main class="main3">
+                COLUMN 3
+            </main>
+        </main>
+        <footer>FOOTER</footer>
+    </div>
+    <br>
+    <br>
+    <div class="grid">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+        <div class="gridItem">The first COLUMN track has a minimum size of auto. this means that the minimum size it will take is to fit the content.its maximum size of 50% will prevent it from getting wider that 50% of the grid constainer width.</div>
+        <div class="gridItem">8</div>
+        <div class="gridItem">9</div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <ul class="container">
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Blogs</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>

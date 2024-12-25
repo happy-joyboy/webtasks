@@ -1,0 +1,165 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Ultra&display=swap');
+
+/* Ultra font family styling for specific elements */
+.ultra-regular {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Empty space block */
+.empty {
+    height: 18px;
+}
+
+
+body {
+    width: 100vw;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+table.calendar {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    border-spacing: 10px; /* Space between cells */
+}
+
+
+span {
+    font-size: 120px;
+}
+
+/* Element-specific color styling */
+#a2 {
+    color: orange;
+}
+#a0 {
+    color: #f16b52;
+}
+#a22 {
+    color: #ee577a;
+}
+#a5 {
+    color: #7581bd;
+}
+
+
+.month-table {
+    width: 80%;
+}
+
+/* Caption styling inside month-table */
+.month-table caption {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Header and body text styling for month table */
+.month-table thead, .month-table tbody {
+    font-size: 10px;
+    font-family: "Arial Black", sans-serif;
+    font-weight: bold;
+}
+
+/* Month-specific caption background colors and styling */
+
+/* January-specific styles */
+.jan caption {
+    background-color: #5393b7;
+}
+.jan td:nth-child(1), .jan th:nth-child(1), .jan td:nth-child(7), .jan th:nth-child(7) {
+    color: #5393b7;
+}
+
+/* February-specific styles */
+.feb caption {
+    background-color: #55abb6;
+}
+.feb td:nth-child(1), .feb th:nth-child(1), .feb td:nth-child(7), .feb th:nth-child(7) {
+    color: #55abb6;
+}
+
+/* March-specific styles */
+.mar caption {
+    background-color: #4db68c;
+}
+.mar td:nth-child(1), .mar th:nth-child(1), .mar td:nth-child(7), .mar th:nth-child(7) {
+    color: #4db68c;
+}
+
+/* April-specific styles */
+.apr caption {
+    background-color: #51b461;
+}
+.apr td:nth-child(1), .apr th:nth-child(1), .apr td:nth-child(7), .apr th:nth-child(7) {
+    color: #51b461;
+}
+
+/* May-specific styles */
+.may caption {
+    background-color: #84bb53;
+}
+.may td:nth-child(1), .may th:nth-child(1), .may td:nth-child(7), .may th:nth-child(7) {
+    color: #84bb53;
+}
+
+/* June-specific styles */
+.june caption {
+    background-color: #cedc47;
+}
+.june td:nth-child(1), .june th:nth-child(1), .june td:nth-child(7), .june th:nth-child(7) {
+    color: #cedc47;
+}
+
+/* July-specific styles */
+.july caption {
+    background-color: #e4c640;
+}
+.july td:nth-child(1), .july th:nth-child(1), .july td:nth-child(7), .july th:nth-child(7) {
+    color: #e4c640;
+}
+
+/* August-specific styles */
+.aug caption {
+    background-color: #febb39;
+}
+.aug td:nth-child(1), .aug th:nth-child(1), .aug td:nth-child(7), .aug th:nth-child(7) {
+    color: #febb39;
+}
+
+/* September-specific styles */
+.sep caption {
+    background-color: #ed8833;
+}
+.sep td:nth-child(1), .sep th:nth-child(1), .sep td:nth-child(7), .sep th:nth-child(7) {
+    color: #ed8833;
+}
+
+/* October-specific styles */
+.oct caption {
+    background-color: #f06a51;
+}
+.oct td:nth-child(1), .oct th:nth-child(1), .oct td:nth-child(7), .oct th:nth-child(7) {
+    color: #f06a51;
+}
+
+/* November-specific styles */
+.nov caption {
+    background-color: #ec5479;
+}
+.nov td:nth-child(1), .nov th:nth-child(1), .nov td:nth-child(7), .nov th:nth-child(7) {
+    color: #ec5479;
+}
+
+/* December-specific styles */
+.dec caption {
+    background-color: #7383be;
+}
+.dec td:nth-child(1), .dec th:nth-child(1), .dec td:nth-child(7), .dec th:nth-child(7) {
+    color: #7383be;
+}

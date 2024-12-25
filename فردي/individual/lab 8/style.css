@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: dimgray;
+    border-radius: 20px;
+    width: 500px;
+    min-height: 400px;
+}
+h1,.input,.button,.output,.select{
+    margin:2rem auto;
+}
+.button input{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid red;
+}
+#display,#display2{
+    background-color: dimgray;
+    color: rgb(0, 196, 193);
+    font-size: 25px;
+    border: none;
+    text-align: center;
+}
+.output{
+    text-align: center;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+}

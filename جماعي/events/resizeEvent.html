@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resizeEvent</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: mediumseagreen;
+
+        }
+
+        p {
+            color: white;
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="dimensions">Resize the window!</p>
+
+    <script>
+        window.onresize = function () {
+            document.getElementById('dimensions').textContent =
+                `Width: ${window.innerWidth}, Height: ${window.innerHeight}`;
+        };
+    </script>
+</body>
+
+</html>
